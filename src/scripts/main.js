@@ -61,3 +61,41 @@ const architectKey = "architect"
 
 console.log(`The empire state building is at ${empireStateBuilding[addressKey]}. It was built in ${empireStateBuilding[architectKey]}. It cost ${empireStateBuilding[costKey]} and is owned by ${empireStateBuilding[ownerKey]}.`)
 
+
+
+const nashvilleSoftwareSchool = {
+    founded: 2012,
+    director: "John Wark",
+    instructors: {
+        fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+        partTime: ["Zoe", "Nathan"]
+    },
+    address: "500 Interstate Blvd. S"
+}
+
+// // const pt = nashvilleSoftwareSchool.partTime
+
+// // for (let i = 0, i < nashvilleSoftwareSchool.partTime.length, i++) {
+// //     console.log(pt[i])
+// }
+console.log("All Instructors")
+
+const partTimeInstructors = nashvilleSoftwareSchool.instructors.partTime
+
+for (let i = 0; i < partTimeInstructors.length; i++) {
+console.log(partTimeInstructors[i])
+}
+
+console.log("full time instructor", nashvilleSoftwareSchool.instructors.fullTime)
+
+const fullTimeInstructors = nashvilleSoftwareSchool.instructors.fullTime
+
+for (let i = 0; i < fullTimeInstructors.length; i++) {
+console.log(fullTimeInstructors[i])
+}
+
+// Part 2
+
+// console.log("Andy:", fullTimeInstructors[4])
+console.log("Andy:", fullTimeInstructors[fullTimeInstructors.length -1])
+console.log("Zoe:" , nashvilleSoftwareSchool.instructors.partTime[0])
